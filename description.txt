@@ -1,0 +1,19 @@
+POST <endpoint>/stack/push/5
+-- Should insert value 5 into the stack
+-- Returns {"status": "success"}
+
+POST <endpoint>/stack/pop/
+-- Should pop and return value from TOS
+-- Returns {"value": val}
+
+GET <endpoint>/stack/TOS/
+-- Should return the top of stack value
+-- Returns {"value": tos}
+
+GET <endpoint>/stack/size/
+-- Should return size
+-- Returns {"size": size}
+
+ GET <endpoint>/stack/all
+ -- Should return a list of all stack elements
+ -- Returns {"elements": [1, 2, 3, . . . , n]}
